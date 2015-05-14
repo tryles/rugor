@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="tryl.es &mdash; online">
+    <meta name="author" content="tryl.es">
+    <link rel="icon" href="img/favicon.ico">
+
+    <script>
+      var metas = document.getElementsByTagName('meta');
+      var i;
+      if (navigator.userAgent.match(/iPhone/i)) {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+          }
+        }
+        document.addEventListener("gesturestart", gestureStart, false);
+      }
+      function gestureStart() {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
+          }
+        }
+      }
+    </script>
+
+    <title>tryl.es &mdash; The Sunday Service</title>
+
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- UP-FRONT JS -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery.mb.ytplayer/inc/jquery.mb.YTPlayer.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body id="top" class="secondary">
+
+      <script>
+          var videos = ["VuaJAgx0x_4", "3ovA7zeviRo","u9k1FaMIYTs"];
+          var rndVideo = videos[Math.floor(Math.random()* videos.length)];
+      </script>
+
+      <a class="player" data-property="{videoURL:rndVideo,containment:'body',autoPlay:true, mute:true, startAt:0,opacity:1,ratio:'4/3', addRaster:true, showControls:false}"></a>                         
+
+      <div class="container-fluid">
+
+        <div class="left">
+            
+          <a href="/#serv" class="back" title="Back to Projects">
+            <span class="icon-tl-arrow-l"></span>
+          </a>
+
+          <a href="#top" class="scroll" title="Scroll top">
+            <img class="yo secondary-logo" src="img/logo.png" alt="tryl.es">
+          </a>
+
+        </div><!-- left -->    
+        
+        <div class="right"> 
+        
+          <header>
+
+            <h1>The Sunday Service Improv Comedy</h1>
+
+            <h2>An old favourite &mdash; coordinated branding and an online presence for Vancouver's primo improv comedy group.</h2> 
+
+          </header>
+
+          <p>How do you make a website convey humor without upstaging the performers that are to be highlighted? This was the task, when, in 2009 a website was requested by the Sunday Service. To answer, illustrated treatment was provided by Julia Sadler (now of <a href="http://lnk.tryl.es/1FkGMMR" class="external" target="_blank">Full-Time Part-Time Studio</a>) created an animated world that complimented instead of competed with the performers.</p>
+
+          <img src="img/serv1.png" alt="The Sunday Service">
+
+          <p>Twitter feeds were pulled using v.1 (!) of the Twitter API.</p>
+
+          <img src="img/serv2.jpg" alt="The Sunday Service">
+
+          <p>Vimeo embeds were accommodated on post-specific video pages, and the group's podcast episodes were pulled similarly via iTunes.</p>
+
+          <img src="img/serv3.png" alt="The Sunday Service">
+
+          <p>The illustrated treatments turned into full-on branding for the group that is still in use today!</p>
+
+          <h3>Conclusion</h3>
+
+          <p>This was a really fun project. Even though the site has been retired, it has had a lasting impact on the group's visual identity.</p>
+
+          <ul class="details">
+            <li>http://thesundayservice.ca (No Longer Live)</li>
+          </ul> 
+
+          <span class="icon-tl-thick"></span>
+
+          <div class="clear"></div>
+        
+        </div><!-- right -->
+
+      </div><!-- container-fluid -->
+
+      <section class="secondary-small-background-section">
+          
+          <h3 class="hide">Breathe</h3>
+
+      </section>
+     
+      <footer>
+        <a href="#top" class="scroll" title="Scroll top">
+          <span class="icon-tl-thick"></span>
+        </a>
+      </footer>
+
+      <!-- JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+     
+      <script src="bower_components/retina.js/dist/retina.min.js"></script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+      <script type="text/javascript">
+
+      $( function() {
+        var ytplayer = $(".player").YTPlayer();
+      });
+
+      $(".scroll").click(function(event){
+        event.preventDefault();
+        var full_url = this.href;
+        var parts = full_url.split("#");
+        var trgt = parts[1];
+        var target_offset = $("#"+trgt).offset();
+
+        if($(window).width() < 767){
+           var target_top = target_offset.top -50;
+        } else {
+           var target_top = target_offset.top -100;
+        }
+
+        $('html, body').animate({scrollTop:target_top}, 500);
+      });
+
+      var image = new Array ();
+      image[0] = "img/1.png";
+      image[1] = "img/2.png";
+      image[2] = "img/3.png";
+      image[3] = "img/4.png";
+      image[4] = "img/5.png";
+      var size = image.length
+      var x = Math.floor(size*Math.random())
+
+      $('.yo').attr('src',image[x]);
+
+      $(".clip").hover(function() {
+        $(this).css("background-color","white")
+      });
+
+       $(".visit, .clip").mouseover(function() {
+          $(this).css("background-color","white").css("color","black");
+      }).mouseout(function() {
+          $(this).css("background-color","transparent").css("color","white");
+      });
+
+      </script>
+
+  </body>
+</html>

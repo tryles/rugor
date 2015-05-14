@@ -774,8 +774,9 @@ ul.details li {
     line-height: 28px;
     font-size: 24px; }
 
-  .contact a {
-    padding: 20px 24px 40px 24px; }
+  .contact li {
+    position: relative;
+    display: inline-block; }
 
   /* SECONDARY PAGE
   ================================================== */

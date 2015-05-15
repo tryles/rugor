@@ -170,13 +170,13 @@
           <ul class="contact">
             <li title="Email">
   
-
-              <!--Place the code below where you want the link to be displayed-->
-<span id="obf"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:vasb@gely.rf?fhowrpg=Jrofvgr Vadhvel\" gnetrg=\"_oynax\"></n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});document.body.appendChild(eo);</script>
-<noscript><span style="unicode-bidi:bidi-override;direction:rtl;">se.lyrt@ofni</span></noscript></span>
+              <span id="obf"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:vasb@gely.rf?fhowrpg=Jrofvgr Vadhvel\" gnetrg=\"_oynax\"></n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});document.body.appendChild(eo);</script>
+              <noscript><span style="unicode-bidi:bidi-override;direction:rtl;">se.lyrt@ofni</span></noscript></span>
+            
             </li>
-            <li><a href="http://blog.tryl.es" title="Tumblr"><span class="icon-tl-triangle"></span></a></li>
             <li class="gh"><a href="#" title="GitHub"><span class="icon-mark-github"></span></a></li>
+            <li><a href="http://blog.tryl.es" title="Tumblr"><span class="icon-tl-triangle"></span></a></li>
+            
           </ul>
              
         </section>
@@ -197,73 +197,7 @@
     <script src="js/tooltip.js"></script>
     <script src="bower_components/isotope/dist/isotope.pkgd.js"></script>
     <script src="bower_components/headhesive.js/dist/headhesive.min.js"></script>
-    <script src="js/smoothstate.all.js"></script>
-    <script src="bower_components/retina.js/dist/retina.min.js"></script>
-  
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script>
+    <script src="js/home.min.js"></script>
 
-    var options = {
-        offset: '#foo',
-        classes: {
-            clone:   'banner--clone',
-            stick:   'banner--stick',
-            unstick: 'banner--unstick'
-        }
-    };
-
-    var banner = new Headhesive('.banner', options);
-    
-    // external js: isotope.pkgd.js
-
-    $( function() {
-      var ytplayer = $(".player").YTPlayer();
-      $('.isotope').isotope({
-        itemSelector: '.item',
-        masonry: {
-          columnWidth: '.grid-sizer'
-        }
-      });
-
-      $("[rel='tooltip']").tooltip(); 
-      $('.item').hover(
-        function(){
-          $(this).find('.caption').fadeIn(250);
-        },
-        function(){
-          $(this).find('.caption').fadeOut(250);
-        }
-      );
-    });
-
-    $(".scroll").click(function(event){
-      event.preventDefault();
-      var full_url = this.href;
-      var parts = full_url.split("#");
-      var trgt = parts[1];
-      var target_offset = $("#"+trgt).offset();
-
-      if($(window).width() < 767){
-         var target_top = target_offset.top -50;
-      } else {
-         var target_top = target_offset.top -100;
-      }
-
-      $('html, body').animate({scrollTop:target_top}, 500);
-    });
-
-    var image = new Array ();
-    image[0] = "img/1.png";
-    image[1] = "img/2.png";
-    image[2] = "img/3.png";
-    image[3] = "img/4.png";
-    image[4] = "img/5.png";
-    var size = image.length
-    var x = Math.floor(size*Math.random())
-
-    $('.yo').attr('src',image[x]);
-
-    </script>
   </body>
 </html>

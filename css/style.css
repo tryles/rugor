@@ -435,8 +435,7 @@ a.external {
   text-decoration: none; }
 
 a.external:after {
-  content: "\e60d";
-  font-family: icomoon;
+  content: " ";
   position: absolute;
   left: 0;
   display: inline-block;
@@ -521,7 +520,7 @@ img.ri:empty {
 /* PROJECTS SECTION
 ================================================== */
 .projects-section {
-  background: rgba(0, 0, 0, 0.85); }
+  background: rgba(0, 0, 0, 0.9); }
 
 .item {
   overflow: hidden;
@@ -617,7 +616,7 @@ ul.contact li span.icon-mark-github {
   text-decoration: none; }
 
 .contact {
-  margin-left: -20px; }
+  margin-left: -18px; }
 
 .contact li {
   padding: 20px 24px 40px;
@@ -647,7 +646,7 @@ footer a span {
 /* SECONDARY 
 ================================================== */
 .secondary .container-fluid {
-  background: rgba(0, 0, 0, 0.85); }
+  background: rgba(0, 0, 0, 0.9); }
 
 .left, .right {
   padding-left: 20px;
@@ -719,7 +718,7 @@ a.back {
   position: relative;
   width: 100%;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.85); }
+  background: rgba(0, 0, 0, 0.9); }
 
 .icon-ender {
   font-size: 1.3em;
@@ -755,6 +754,9 @@ ul.details li {
   background: white; }
 
 @media (max-width: 768px) {
+  body {
+    background: url('../img/background.jpg'); }
+
   /* HOME PAGE
   ================================================== */
   .banner {
@@ -804,6 +806,15 @@ ul.details li {
     padding-top: 50px; }
 
   .secondary h2:hover:before, .secondary h3:hover:before {
+    display: none; }
+
+  .clip {
+    display: none; }
+
+  a.external {
+    text-decoration: underline; }
+
+  a.external:after {
     display: none; } }
 @media (min-width: 1400px) {
   /* HOME PAGE

@@ -812,7 +812,8 @@ ul.details li {
     display: none; }
 
   a.external {
-    text-decoration: underline; }
+    text-decoration: underline;
+    display: inline; }
 
   a.external:after {
     display: none; } }

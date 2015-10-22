@@ -136,58 +136,7 @@
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
       <script src="js/ie10-viewport-bug-workaround.js"></script>
 
-      <script type="text/javascript">
-
-      $( function() {
-        var ytplayer = $(".player").YTPlayer();
-      });
-
-      $(".scroll").click(function(event){
-        event.preventDefault();
-        var full_url = this.href;
-        var parts = full_url.split("#");
-        var trgt = parts[1];
-        var target_offset = $("#"+trgt).offset();
-
-        if($(window).width() < 767){
-           var target_top = target_offset.top -50;
-        } else {
-           var target_top = target_offset.top -100;
-        }
-
-        $('html, body').animate({scrollTop:target_top}, 500);
-      });
-
-      var image = new Array ();
-      image[0] = "img/1.png";
-      image[1] = "img/2.png";
-      image[2] = "img/3.png";
-      image[3] = "img/4.png";
-      image[4] = "img/5.png";
-      var size = image.length
-      var x = Math.floor(size*Math.random())
-
-      $('.yo').attr('src',image[x]);
-
-      $('.clip').zclip({
-          path:'js/ZeroClipboard.swf',
-          copy:$('.shortUrl').text(),
-          afterCopy:function(){
-                 $("#message").text("Copied to Clip Board");
-              }
-      });
-
-      $(".clip").hover(function() {
-        $(this).css("background-color","white")
-      });
-
-       $(".visit, .clip").mouseover(function() {
-          $(this).css("background-color","white").css("color","black");
-      }).mouseout(function() {
-          $(this).css("background-color","transparent").css("color","white");
-      });
-
-      </script>
+      <script src="js/project.min.js"></script>
 
   </body>
 </html>

@@ -440,6 +440,24 @@ img.ri:empty {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
 
+/* CLIENTS
+================================================== */
+#clients {
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  padding: 40px 0px 0px; }
+
+#cllients ul {
+  display: block;
+  max-width: 1080px; }
+
+#clients ul li {
+  display: inline-block;
+  width: 380px; }
+
+#clients ul li img {
+  max-height: 200px; }
+
 /* SKILLZ
 ================================================== */
 #skillz {

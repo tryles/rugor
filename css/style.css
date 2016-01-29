@@ -421,7 +421,7 @@ img.ri:empty {
   margin: 0 0 10px; }
 
 .caption span {
-  padding: 24px 0 20px;
+  padding: 24px 10px 20px;
   display: inline-block;
   vertical-align: middle;
   line-height: 34px;
@@ -453,10 +453,34 @@ img.ri:empty {
 
 #clients ul li {
   display: inline-block;
-  width: 380px; }
+  width: 380px;
+  margin: 0 50px; }
 
 #clients ul li img {
   max-height: 200px; }
+
+#clients ul li.vc {
+  width: 300px; }
+
+#clients ul li.utl {
+  width: 212px; }
+
+#clients ul li.can {
+  width: 149px; }
+
+#clients ul li.anth {
+  width: 177px; }
+
+#clients ul li.osei {
+  width: 132px; }
+
+#clients ul li.wass {
+  width: 210px; }
+
+#clients p {
+  margin-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px; }
 
 /* SKILLZ
 ================================================== */
@@ -468,6 +492,8 @@ img.ri:empty {
 #skillz p {
   max-width: 700px;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 1em; }
 
 /* SMALL VIDEO BACKGROUND 
@@ -557,6 +583,9 @@ footer a span {
 
 /* SECONDARY 
 ================================================== */
+body.secondary {
+  background: #000; }
+
 .secondary .container-fluid {
   background: rgba(0, 0, 0, 0.85); }
 

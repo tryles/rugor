@@ -298,6 +298,9 @@ a.external:after {
   z-index: 600;
   position: relative; }
 
+.img-responsive {
+  max-width: 100%; }
+
 /* .pattern {
     background-image:url(../img/pattern.png);
     background-repeat: repeat;
@@ -328,7 +331,7 @@ a.external:after {
   margin-top: -67px;
   margin-left: -225px; }
 
-#yo {
+.upper-logo .yo {
   display: none; }
 
 /* FULL SCREEN IMAGE
@@ -692,6 +695,16 @@ ul.details li {
   color: #000;
   background: #fff; }
 
+@media (max-width: 460px) {
+  #logo {
+    display: none; }
+  .upper-logo .yo {
+    display: block; } }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  body {
+    background: url("../img/bg.gif") repeat; } }
+
 @media (max-width: 768px) {
   body {
     background: url("../img/bg.gif") repeat; }
@@ -713,6 +726,8 @@ ul.details li {
     max-height: 170px; }
   #clients ul li {
     margin: 0 20px; }
+  #clients ul li.vc {
+    width: 280px; }
   .contact li {
     position: relative;
     display: inline-block; }

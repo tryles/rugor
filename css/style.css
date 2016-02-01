@@ -463,7 +463,7 @@ img.ri:empty {
   max-height: 200px; }
 
 #clients ul li.vc {
-  width: 300px; }
+  width: 270px; }
 
 #clients ul li.utl {
   width: 212px; }
@@ -726,8 +726,9 @@ ul.details li {
     max-height: 170px; }
   #clients ul li {
     margin: 0 20px; }
-  #clients ul li.vc {
-    width: 280px; }
+  /*    #clients ul li.vc {
+            width: 270px;
+    } */
   .contact li {
     position: relative;
     display: inline-block; }

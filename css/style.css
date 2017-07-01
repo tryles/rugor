@@ -284,6 +284,12 @@ a.external {
   position: relative;
   text-decoration: none; }
 
+a.tel {
+  text-decoration: none;
+  border-bottom: 1px solid transparent; }
+  a.tel:hover {
+    border-bottom: 1px solid #fff; }
+
 a.external:after {
   content: " ";
   position: absolute;
@@ -493,7 +499,7 @@ img.ri:empty {
   padding: 40px 0px 0px; }
 
 #skillz p {
-  max-width: 700px;
+  max-width: 740px;
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;

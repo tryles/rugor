@@ -52,3 +52,15 @@ var images = ["img/1.png","img/2.png","img/3.png","img/4.png","img/5.png"];
 var rndImage = Math.floor(images.length*Math.random());
 
 $('.yo').attr('src',images[rndImage]);
+
+var trylLogo = new SVGMorpheus('#logo');
+var logos = ['Layer_1','Layer_2','Layer_3','Layer_4','Layer_5'];
+
+setInterval(function() {
+  var index = Math.floor(Math.random() * logos.length);
+  trylLogo.to(logos[index], {
+    duration: 1000,
+    easing: 'quad-in-out',
+    rotation: 'none'
+  });
+}, 13000);

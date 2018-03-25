@@ -23,11 +23,14 @@ var rndImage = Math.floor(images.length*Math.random());
 
 $('.yo').attr('src',images[rndImage]);
 
-$('.clip').click(function () {
-  var copyText = document.querySelector(".clip");
-  copyText.select();
-  document.execCommand("Copy");
-  alert("Copied the text: " + copyText.value);
+var clipboard = new ClipboardJS('.clip');
+
+clipboard.on('success', function (e) {
+  e.clearSelection();
+});
+
+$('.clip').click(function(){
+  $(".copied").fadeIn(500).fadeOut(500);
 });
 
 $(".clip").hover(function() {

@@ -92,7 +92,7 @@
 
           <ul class="details">
             <li>http://groove.trylesstryhard.com (Archived Site)<a class="visit" href="http://lnk.tryl.es/1Ey8wHm" title="Access Gallery Auction" target="_blank">Visit</a></li>
-            <li><span class="shortUrl">http://lnk.tryl.es/1Ey8wHm</span><a class="clip" href="#" title="Copy">Copy</a><span class="copied">Copied</span></li>
+            <li><span id="shortUrl" class="shortUrl">http://lnk.tryl.es/1Ey8wHm</span><a class="clip" title="Copy" data-clipboard-target="#shortUrl">Copy</a><span class="copied">Copied</span></li>
           </ul>  
 
           <span class="icon-tl-thick"></span>
@@ -119,7 +119,8 @@
       ================================================== -->
       <!-- Placed at the end of the document so the pages load faster -->
 
-      <script src="js/project.min.js"></script>
+      <script src="js/clipboard.min.js"></script>
+      <script src="js/project.min.js" defer></script>
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -23,12 +23,11 @@ var rndImage = Math.floor(images.length*Math.random());
 
 $('.yo').attr('src',images[rndImage]);
 
-$('.clip').zclip({
-    path:'js/ZeroClipboard.swf',
-    copy:$('.shortUrl').text(),
-    afterCopy:function(){
-           $(".copied").fadeIn(500).fadeOut(500);
-        }
+$('.clip').click(function () {
+  var copyText = document.querySelector(".clip");
+  copyText.select();
+  document.execCommand("Copy");
+  alert("Copied the text: " + copyText.value);
 });
 
 $(".clip").hover(function() {
